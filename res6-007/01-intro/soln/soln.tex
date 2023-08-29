@@ -211,14 +211,51 @@ For clarity you can also prove this directly like so
 \begin{equation*}
     \frac{z}{z^*} = 
     z\frac{1}{z^*} = 
-    re^{j\theta}re^{-j\theta} = 
-    r^2e^{j\theta - j\theta} = 
-    r^2e^{0} = 
-    r^2
+    re^{j\theta}\frac{1}{re^{-j\theta}} = 
+    re^{j\theta}{re^{j\theta}} = 
+    r^2e^{j\theta + j\theta} = 
+    r^2e^{j2\theta} = 
 \end{equation*}
 \begin{empheq}[box={\ansbox}]{equation*}
-    zz^* = r^2
+    zz^* = r^2e^{j2\theta}
 \end{empheq}
 
+\noindent \textbf{(a)(vi)}
+\begin{equation*}
+    \frac{1}{z} = 
+    \frac{1}{re^{j\theta}} = 
+    re^{-j\theta}
+\end{equation*}
+\begin{empheq}[box={\ansbox}]{equation*}
+    \frac{1}{z} = re^{-j\theta}
+\end{empheq}
+
+
+%%%%%%%%%%%%%%%
+% PROBLEM 1.5 %
+%%%%%%%%%%%%%%%
+\newpage
+\subsubsection*{P1.5}
+\begin{equation*}
+    2 \sin(\frac{\alpha}{2}) e^{j\frac{\alpha - \pi}{2}} = 
+    2 \frac{e^{j\frac{\alpha}{2}} - e^{-j\frac{\alpha}{2}}}{2j} 
+    e^{j(\frac{\alpha}{2} - \frac{\pi}{2}}) = 
+    \frac{e^{j(\frac{\alpha}{2} + \frac{\alpha}{2} - \frac{\pi}{2}}) - 
+    e^{j(\frac{\alpha}{2} - \frac{\alpha}{2} - \frac{\pi}{2}})}{j} = 
+    \frac{e^{j(\alpha - \frac{\pi}{2})} - e^{-j\frac{\pi}{2}}}{j}
+\end{equation*}
+\begin{equation*}
+    = \frac{e^{j\alpha} e^{-j\frac{\pi}{2}} - e^{-j\frac{\pi}{2}}}{j} = 
+    \frac{e^{-j\frac{\pi}{2}} (e^{j\alpha} - 1)}{j} = 
+    \frac{(\cos(\frac{\pi}{2}) -j\sin(\frac{\pi}{2}) (e^{j\alpha} - 1)}{j} = 
+    \frac{-j (e^{j\alpha} - 1)}{j} = 
+    (1 - e^{j\alpha}) 
+\end{equation*}
+
+%%%%%%%%%%%%%%%
+% PROBLEM 1.6 %
+%%%%%%%%%%%%%%%
+\newpage
+\subsubsection*{P1.6}
 
 \end{document}
