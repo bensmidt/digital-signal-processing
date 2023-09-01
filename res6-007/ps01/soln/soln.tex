@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{graphicx}
+\graphicspath{ {./../images/} }
 \usepackage{amscd}
 \usepackage{enumerate}
 \usepackage{color}
@@ -212,23 +213,25 @@ For clarity you can also prove this directly like so
     \frac{z}{z^*} = 
     z\frac{1}{z^*} = 
     re^{j\theta}\frac{1}{re^{-j\theta}} = 
-    re^{j\theta}{re^{j\theta}} = 
-    r^2e^{j\theta + j\theta} = 
-    r^2e^{j2\theta} = 
+    e^{j\theta}{e^{j\theta}} = 
+    e^{j\theta + j\theta} = 
+    e^{j2\theta}
 \end{equation*}
 \begin{empheq}[box={\ansbox}]{equation*}
-    zz^* = r^2e^{j2\theta}
+    zz^* = e^{j2\theta}
 \end{empheq}
 
 \noindent \textbf{(a)(vi)}
 \begin{equation*}
     \frac{1}{z} = 
     \frac{1}{re^{j\theta}} = 
-    re^{-j\theta}
+    \frac{e^{-j\theta}}{r}
 \end{equation*}
 \begin{empheq}[box={\ansbox}]{equation*}
-    \frac{1}{z} = re^{-j\theta}
+    \frac{1}{z} = \frac{e^{-j\theta}}{r}
 \end{empheq}
+
+\includegraphics{prob4.png}
 
 
 %%%%%%%%%%%%%%%
@@ -255,7 +258,33 @@ For clarity you can also prove this directly like so
 %%%%%%%%%%%%%%%
 % PROBLEM 1.6 %
 %%%%%%%%%%%%%%%
-\newpage
 \subsubsection*{P1.6}
+\includegraphics{prob6.png}
+
+%%%%%%%%%%%%%%%
+% PROBLEM 1.7 %
+%%%%%%%%%%%%%%%
+\subsubsection*{P1.7}
+\textbf{a)} 
+\[ 
+\int_{0}^{a} e^{-2t} dt = 
+\frac{-1}{2} e^{-2t} \biggr\vert_{0}^{a} = 
+\frac{-1}{2} (e^{-2a} - e^{0}) =
+\frac{1}{2} (1 - e^{-2a})
+\]
+\begin{empheq}[box={\ansbox}]{equation*}
+    \int_{0}^{a} e^{-2t} dt = \frac{1}{2} (1 - e^{-2a})
+\end{empheq}
+
+\textbf{b)} 
+\[ 
+\int_{2}^{\infty} e^{-3t} dt = 
+\frac{-1}{3} e^{-3t} \biggr\vert_{2}^{\infty} = 
+\lim_{\tau \to \infty}\frac{-1}{3} (e^{-2\tau} - e^{-3(2)}) =
+\frac{e^{-6}}{3}
+\]
+\begin{empheq}[box={\ansbox}]{equation*}
+    \int_{2}^{\infty} e^{-3t} dt = \frac{e^{-6}}{3}
+\end{empheq}
 
 \end{document}

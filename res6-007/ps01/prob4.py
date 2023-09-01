@@ -14,7 +14,7 @@ def main() -> None:
     r = 2/3
     theta = np.pi/6
 
-    radii = [r, r**2, r, r**2, r**2, r]
+    radii = [r, r**2, r, r**2, 1, 1/r]
     thetas = [-theta, 2*theta, theta+np.pi/2, 0, 2*theta, -theta]
     colors = ['r', 'g', 'b', 'y', 'm', 'c']
     labels = ['i', 'ii', 'iii', 'iv', 'v', 'vi']
@@ -38,10 +38,11 @@ def main() -> None:
     ax.legend(handles=legend_handles, title='Vectors')
     # other graph settings
     ax.set_rmax(max(radii))
-    ax.set_rticks(np.arange(0, r, 1/9))
+    ax.set_rticks(np.arange(0, max(radii), 1/4))
     ax.set_rlabel_position(-22.5)
     ax.grid(True)
     ax.set_title("Problem 4")
+    plt.savefig('images/prob4.png')
     plt.show()
 
 

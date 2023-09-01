@@ -5,3 +5,6 @@ The course includes:
 - lecture notes
 - assigned readings
 - problem sets (with solutions)
+
+# Problem Sets
+- [Problem Set 1](https://github.com/bensmidt/digital-signal-processing/blob/main/res6-007/ps01/soln/soln.pdf)
